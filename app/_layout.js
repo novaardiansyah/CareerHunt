@@ -1,25 +1,32 @@
-import { useCallback } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Stack } from 'expo-router'
 import { useFonts } from 'expo-font'
 import * as SplashScreen from 'expo-splash-screen'
-
-SplashScreen.preventAutoHideAsync()
+import * as Font from 'expo-font'
 
 const Layout = () => {
-  const [fontsLoaded] = useFonts({
-    DMbold: require('../assets/fonts/DMSans-Bold.ttf'),
-    DMregular: require('../assets/fonts/DMSans-Regular.ttf'),
-    DMmedium: require('../assets/fonts/DMSans-Medium.ttf')
-  })
+  const [isReady, setIsReady] = useState(false)
 
-  const onLayoutRootView = useCallback(async () => {
-    if (fontsLoaded) {
+  useEffect(() => {
+    const loadFontsAndHideSplash = async () => {
+      await SplashScreen.preventAutoHideAsync()
+      await Font.loadAsync({
+        DMMedium: require('../assets/fonts/DMSans-Medium.ttf'),
+        DMbold: require('../assets/fonts/DMSans-Bold.ttf'),
+        DMregular: require('../assets/fonts/DMSans-Regular.ttf')
+      })
       await SplashScreen.hideAsync()
+      setIsReady(true)
     }
-  }, [fontsLoaded])
 
-  if (!fontsLoaded) return null
-  return <Stack onLayout={onLayoutRootView} />
+    loadFontsAndHideSplash()
+  }, [])
+
+  if (!isReady) {
+    return null
+  }
+
+  return <Stack />
 }
 
 export default Layout
