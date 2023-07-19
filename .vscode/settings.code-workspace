@@ -10,7 +10,7 @@
     },
     "files.eol": "\r\n",
     "window.zoomLevel": 0.5,
-    "editor.fontSize": 10.5,
+    "editor.fontSize": 11,
     "editor.lineHeight": 25,
     "editor.fontFamily": "Hack Regular, Source Code Pro, Consolas, 'Courier New', monospace",
     "intelephense.diagnostics.undefinedProperties": false

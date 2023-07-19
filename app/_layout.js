@@ -1,32 +1,26 @@
-import React, { useEffect, useState } from 'react'
-import { Stack } from 'expo-router'
-import { useFonts } from 'expo-font'
-import * as SplashScreen from 'expo-splash-screen'
-import * as Font from 'expo-font'
+import { Stack } from "expo-router";
+import { useFonts } from "expo-font";
+
+export const unstable_settings = {
+  initialRouteName: 'index'
+};
 
 const Layout = () => {
-  const [isReady, setIsReady] = useState(false)
+  const [fontsLoaded] = useFonts({
+    DMBold: require("../assets/fonts/DMSans-Bold.ttf"),
+    DMMedium: require("../assets/fonts/DMSans-Medium.ttf"),
+    DMRegular: require("../assets/fonts/DMSans-Regular.ttf"),
+  });
 
-  useEffect(() => {
-    const loadFontsAndHideSplash = async () => {
-      await SplashScreen.preventAutoHideAsync()
-      await Font.loadAsync({
-        DMMedium: require('../assets/fonts/DMSans-Medium.ttf'),
-        DMbold: require('../assets/fonts/DMSans-Bold.ttf'),
-        DMregular: require('../assets/fonts/DMSans-Regular.ttf')
-      })
-      await SplashScreen.hideAsync()
-      setIsReady(true)
-    }
-
-    loadFontsAndHideSplash()
-  }, [])
-
-  if (!isReady) {
-    return null
+  if (!fontsLoaded) {
+    return null;
   }
 
-  return <Stack />
-}
+  return (
+    <Stack initialRouteName="index">
+      <Stack.Screen name="index" />
+    </Stack>
+  )
+};
 
-export default Layout
+export default Layout;
