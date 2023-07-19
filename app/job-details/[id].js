@@ -39,7 +39,7 @@ const JobDetails = () => {
         break;
     }
   }
-
+  
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.lightWhite }}>
       <Stack.Screen
@@ -79,7 +79,6 @@ const JobDetails = () => {
                 activeTab={activeTab}
                 setActiveTab={setActiveTab}
               />
-
               {displayTabContent()}
             </View>
           )}
