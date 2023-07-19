@@ -15,8 +15,8 @@ const styles = StyleSheet.create({
     flexDirection: "row",
   },
   likeBtn: {
-    width: 55,
-    height: 55,
+    width: 45,
+    height: 45,
     borderWidth: 1,
     borderColor: "#F37453",
     borderRadius: SIZES.medium,
