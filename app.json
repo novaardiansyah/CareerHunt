@@ -5,6 +5,14 @@
       "bundler": "metro"
     },
     "name": "CareerHunt",
-    "slug": "CareerHunt"
+    "slug": "CareerHunt",
+    "extra": {
+      "eas": {
+        "projectId": "29d0fc12-1f75-4a99-9263-e0dbd6aebad5"
+      }
+    },
+    "android": {
+      "package": "com.novaardiansyah.CareerHunt"
+    }
   }
 }
