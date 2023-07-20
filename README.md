@@ -37,18 +37,18 @@ Feel free to reach out to me via [Email](mailto:novaardiansyah78@gmal.com) or [W
 ## Preview
 
 <div style="margin-bottom: 5px">
-  <img src="assets/images/demo/1.png" alt="image-1" style="max-width: 300px; margin-right: 10px" />
-  <img src="assets/images/demo/2.png" alt="image-2" style="max-width: 300px;" />
+  <img src="assets/images/demo/1.png" alt="image-1" style="width: 300px; margin-right: 10px" />
+  <img src="assets/images/demo/2.png" alt="image-2" style="width: 300px;" />
 </div>
 
 <div style="margin-bottom: 5px">
-  <img src="assets/images/demo/3.png" alt="image-3" style="max-width: 300px; margin-right: 10px" />
-  <img src="assets/images/demo/4.png" alt="image-4" style="max-width: 300px;" />
+  <img src="assets/images/demo/3.png" alt="image-3" style="width: 300px; margin-right: 10px" />
+  <img src="assets/images/demo/4.png" alt="image-4" style="width: 300px;" />
 </div>
 
 <div style="margin-bottom: 5px">
-  <img src="assets/images/demo/5.png" alt="image-5" style="max-width: 300px; margin-right: 10px" />
-  <img src="assets/images/demo/6.png" alt="image-6" style="max-width: 300px;" />
+  <img src="assets/images/demo/5.png" alt="image-5" style="width: 300px; margin-right: 10px" />
+  <img src="assets/images/demo/6.png" alt="image-6" style="width: 300px;" />
 </div>
 
 
