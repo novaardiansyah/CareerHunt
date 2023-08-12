@@ -32,7 +32,7 @@ Guess what? This project dances to the beat of the [MIT License](https://github.
 
 ## Contact
 
-Feel free to reach out to me via [Email](mailto:novaardiansyah78@gmal.com) or [Whatsapp](https://wa.me/6289506668480?text=Hi%20Nova,%20I%20have%20a%20question%20about%20Career%20Hunt). I'm just a message away! 📩
+Feel free to reach out to me via [Email](mailto:novaardiansyah78@gmail.com) or [Whatsapp](https://wa.me/6289506668480?text=Hi%20Nova,%20I%20have%20a%20question%20about%20Career%20Hunt). I'm just a message away! 📩
 
 ## Preview
 
